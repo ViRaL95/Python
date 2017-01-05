@@ -1,0 +1,88 @@
+cd
+Strings:
+
+-When joining strings together in python if your string contains ints or floats we can not use the concatentation operator (+), we must use ','
+-Commas create an extra space in your codew
+
+Ex:
+print('can do this',5)
+
+-When including quotes within strings two options come to mind:
+
+1st Option:
+In the 1st option we use single quotes and an escape character(\) or commonly known as a backslash
+	Ex: 	
+	print('don\'t')
+
+2nd Option:
+In the 2nd option we use double quotes and we do not have to use an escape chracter(\)	
+	Ex:
+	print("don't")
+
+
+
+Loops:
+	While Loops:
+
+	while condition<10
+		print (condition)
+		condition+=1
+
+	For Loops:
+
+	examplelist=[1,2,3,4,5,6]	
+	for things in examplelist
+		print (things)
+If Statements:
+
+	if x>55: 
+		print("something")
+	elif x<40
+		print("betweeen 55 and 40")	
+	else:
+		print ("less than 40")	
+
+Functions:
+1st Option:
+Function without parameters
+	def example():
+		print("stuff")
+2nd Option:
+Function with parameters
+	def example(Var1):
+		print(Var1);
+
+
+Returning Booleans in Functions:
+	Return True, Return False is the proper syntax
+
+Logical Operators:
+OR: or
+AND: and
+NOT: not
+equals: ==
+not equals: !=		
+
+
+Dividing two ints in python
+3/2=1 
+1/2=0
+float(1/2)=0
+float(1)/2=.5
+
+In order to get division to be a decimal you must convert or cast the dividend or divisor to a float 
+
+
+The range function():
+
+for i in range(10)
+	print (i) 
+
+This will print out 0-9 
+
+for i in range (1,10)
+	print(i)
+This will print out 1-9
+
+for i in range (1,2,10)
+This will print out 1, 3, 5, 7, 9
