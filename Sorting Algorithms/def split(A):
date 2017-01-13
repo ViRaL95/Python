@@ -1,0 +1,42 @@
+def split(A):
+	n=len(A)
+	mid=n/2
+	left[0]*mid
+	right[0]*(n-mid)
+	if(n==1):
+		return A
+	for i in range (0,mid):
+		left[i]=A[i]	
+	for i in range (mid, n):
+		right[i]=A[i]	
+	
+	split(left)
+	split(right)
+	merge(left,right,A)
+
+
+def merge(left, right, A):
+	i=j=k=0
+	NL=len(left)
+	NR=len(right)
+	while(i<NL and j<NR):
+		if(left[i]<=right[j]):
+			A[k]=left[i]
+			i+=1
+		if(right[j]<left[i]):
+			A[k]=right[j]	
+			j+=1
+		k+=1		
+	while(i<NL):
+		A[k]=left[i]
+		k+=1
+		i+=1
+	while(j<NR):
+		A[k]=right[j]
+		k+=1
+		j+=1
+
+if __name__== '__main__':
+	A="DEFABC"
+	print(mergeSort(A))
+
